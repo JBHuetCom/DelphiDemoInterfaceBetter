@@ -33,7 +33,7 @@ implementation
 uses
   UTAddition,
   UTMultiplication
-//  UTMultiplicationParAddition
+  //  UTMultiplicationParAddition
   ;
 
 {$R *.fmx}
@@ -45,18 +45,20 @@ procedure TFormMain.ExecuteCalcul(CalculChoisi: ICalcul);
 
 procedure TFormMain.ExecuteAddition(Sender: TObject);
   var
-    CaclculAddition : TAddition;
+    Caclcul : TAddition;
   begin
-    CaclculAddition := TAddition.Create;
-    ExecuteCalcul(CaclculAddition);
+    Caclcul := TAddition.Create;
+    ExecuteCalcul(Caclcul);
   end;
 
 procedure TFormMain.ExecuteMultiplication(Sender: TObject);
   var
-    CaclculMultiplication : TMultiplication;
+    Caclcul : TMultiplication;
+    // Caclcul : TMultiplicationParAddition;
   begin
-    CaclculMultiplication := TMultiplication.Create;
-    ExecuteCalcul(CaclculMultiplication);
+    Caclcul := TMultiplication.Create;
+    // Caclcul := TMultiplicationParAddition.Create;
+    ExecuteCalcul(Caclcul);
   end;
 
 end.
