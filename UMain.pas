@@ -40,6 +40,8 @@ uses
 
 procedure TFormMain.ExecuteCalcul(CalculChoisi: ICalcul);
   begin
+    if not Assigned(CalculChoisi) then
+      raise Exception.Create('La méthode de calcul n''est pas définie');
     lblResultat.Text := CalculChoisi.Calcul(edtVal1.Text.ToInteger, edtVal2.Text.ToInteger).ToString;
   end;
 
