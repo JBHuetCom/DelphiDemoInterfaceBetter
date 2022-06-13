@@ -47,20 +47,20 @@ procedure TFormMain.ExecuteCalcul(CalculChoisi: ICalcul);
 
 procedure TFormMain.ExecuteAddition(Sender: TObject);
   var
-    Caclcul : TAddition;
+    Calcul : TAddition;
   begin
-    Caclcul := TAddition.Create;
-    ExecuteCalcul(Caclcul);
+    Calcul := TAddition.Create;
+    ExecuteCalcul(Calcul);
   end;
 
 procedure TFormMain.ExecuteMultiplication(Sender: TObject);
   var
-    Caclcul : TMultiplication;
-    // Caclcul : TMultiplicationParAddition;
+    Calcul : TMultiplication;
+    // Calcul : TMultiplicationParAddition;
   begin
-    Caclcul := TMultiplication.Create;
-    // Caclcul := TMultiplicationParAddition.Create;
-    ExecuteCalcul(Caclcul);
+    Calcul := TMultiplication.Create;
+    // Calcul := TMultiplicationParAddition.Create;
+    ExecuteCalcul(Calcul);
   end;
 
 end.
